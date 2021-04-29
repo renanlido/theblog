@@ -1,1 +1,113 @@
-// TODO
+#headerContainer {
+  nav {
+    align-items: center;
+  }
+}
+
+.banner {
+  height: 25rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.mainContainer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5rem 0;
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    >h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 3.625rem;
+      letter-spacing: -0.03125rem;
+      color: var(--heading);
+    }
+  }
+}
+
+.infoContent {
+  display: flex;
+  color: var(--info);
+  margin-top: 1.5625rem;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    & + div {
+      margin-left: 1.5rem;
+    }
+
+    svg{
+      margin-right: 0.5rem;
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+
+    time {
+      font-size: 0.875rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.content {
+  margin-top: 4rem;
+
+  h2{
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 140%;
+    color: var(--heading);
+    padding-bottom: 4rem;
+
+    & + h2 {
+      margin-top: 4.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color : var(--body);
+    text-align: justify;
+    line-height: 140%;
+
+    & + p {
+      margin-top: 2.5rem;
+    }
+  }
+
+  a {
+    color: var(--highlight);
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  ul {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+
+    li {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color : var(--body);
+      line-height: 140%;
+      text-align: justify;
+    }
+  }
+}
