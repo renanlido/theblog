@@ -106,7 +106,7 @@ export default function Home(postsPagination: HomeProps): JSX.Element {
               </Link>
             ))
           ) : (
-            <div className={styles.spinningCicles}>
+            <div className={commonStyles.spinningCicles}>
               <SpinningCircles fill="#F8F8F8" />
             </div>
           )}
