@@ -110,6 +110,7 @@ export default function Home(postsPagination: HomeProps): JSX.Element {
               <SpinningCircles fill="#F8F8F8" />
             </div>
           )}
+
           {nextPage === null ? (
             ''
           ) : (
@@ -131,8 +132,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const postsResponse = await prismic.query(
     [Prismic.Predicates.at('document.type', 'posts')],
     {
-      pageSize: 1,
-      orderings: '[my.posts.date desc]',
+      pageSize: 20,
+      orderings: '[document.first_publication_date desc]',
     }
   );
 
